@@ -7,7 +7,7 @@ const sels = [
 
 setInterval(() => {
   if (exp?.Overwrite?.automate) sels.forEach(sel => document.querySelector(sel)?.click());
-}, (exp?.Overwrite?.delay || 0.2) * 1000);
+}, (exp?.Overwrite?.delay || 1) * 1000);
 
 function getMenu() {
   const menu = document.querySelector("._13hsycvc[data-dup='true']") || Tools.dupCont();
